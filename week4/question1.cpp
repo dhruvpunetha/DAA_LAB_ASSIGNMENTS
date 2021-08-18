@@ -15,6 +15,7 @@ void merge(int ar[],int l,int mid,int h)
      }
         else
         {
+             inversion++;
             temp[cur++]=ar[b++];
         }
     }
@@ -33,7 +34,7 @@ void merge(int ar[],int l,int mid,int h)
       int z=0;
     for(int i=l;i<=h;i++)
     {
-        inversion++;
+       
     ar[i]=temp[z++];
     }
 
