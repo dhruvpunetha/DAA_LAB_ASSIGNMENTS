@@ -65,7 +65,8 @@ int main()
         for(int j=0;j<siz;j++)
         cout<<ar[j]<<" ";
         cout<<endl;
-       
+        cout<<"COMPARISION: "<<comp<<endl;
+        cout<<"INVERSION: "<<inversion<<endl;
     }
     return 0;
 }
