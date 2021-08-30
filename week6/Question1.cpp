@@ -1,9 +1,5 @@
 #include<bits/stdc++.h>
-using namespace std;/*
-void tes(int** ar);
-{
-    cout<<ar[1][1];
-}*/
+using namespace std;
 void mark(int **G, int n, int k)
 {
     for (int i = 0; i < n; ++i)
