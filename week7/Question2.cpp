@@ -8,7 +8,9 @@ void bellman(int **graph,int m,int sour)
 {
 vector<int>dis(m,INT_MAX);
 dis[sour]=0;
-for(int i=0;i<m-1;i++)
+for(int ki=0;ki<m-1;ki++)
+{
+for(int i=0;i<m;i++)
 {
 for(int j=0;j<m;j++)
 {
@@ -17,6 +19,7 @@ for(int j=0;j<m;j++)
         if(dis[j]>dis[i]+graph[i][j])
         dis[j]=dis[i]+graph[i][j];
     }
+}
 }
 }
 for(int i=0;i<m;i++)
