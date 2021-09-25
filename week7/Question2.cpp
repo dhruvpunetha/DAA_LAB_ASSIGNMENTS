@@ -3,10 +3,15 @@
 //in negative edge weight ycle it may not work
 #include<bits/stdc++.h>
 using namespace std;
-
+void pacal(vector<int>& pa,int i)
+{
+cout<< i+1<<" ";
+if(pa[i]>0)
+pacal(pa,pa[i]);
+}
 void bellman(int **graph,int m,int sour)
 {
-vector<int>dis(m,INT_MAX);
+vector<int>dis(m,INT_MAX),pa(m,-1);
 dis[sour]=0;
 for(int ki=0;ki<m-1;ki++)
 {
@@ -17,14 +22,17 @@ for(int j=0;j<m;j++)
     if(graph[i][j]!=0)
     {
         if(dis[j]>dis[i]+graph[i][j])
-        dis[j]=dis[i]+graph[i][j];
+        { dis[j]=dis[i]+graph[i][j];
+        pa[j]=i;
     }
+}
 }
 }
 }
 for(int i=0;i<m;i++)
 {
-    cout<<dis[i]<<endl;
+    pacal(pa,i);
+    cout<<": "<<dis[i]<<endl;
 }
 }
 
