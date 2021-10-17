@@ -13,7 +13,7 @@ bool unionbweig(vector<int> &p, int u, int v)
     int pv=fp(p,v);
     if(pu!=pv)
     {
-        if(p[pu]<p[pv])
+        if(p[pu]<=p[pv])
         {
             p[pu]+=p[pv];
             p[pv]=pu;
@@ -35,7 +35,7 @@ int krus(vector<vector<int>>&v,int n)
         for (int j = 0; j < n; ++j)
         if(v[i][j]!=0)
         g.push_back(make_pair(v[i][j],make_pair(i,j)));
-     sort(g.begin(),g.end());
+     sort(g.begin(),g.end(), greater<pair<int, pair<int, int>>>());
      vector<int>p(n,-1);
      for(auto i: g)
      {
@@ -63,5 +63,5 @@ int main()
     }
     v.push_back(vec);
     }
-    cout<<"Minimum spanning weight : "<<krus(v,n);
+    cout<<"Maximum spanning weight : "<<krus(v,n);
 }
