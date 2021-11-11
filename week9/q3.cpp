@@ -1,4 +1,5 @@
 //min computation path
+//use priority queue if want lesser time
 #include<bits/stdc++.h>
 using namespace std;
 int main()
