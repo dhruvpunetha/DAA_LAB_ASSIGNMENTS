@@ -30,6 +30,6 @@ bool ans=parta(vec,su/2,0);
 if(ans)
 cout<<"Yes";
 else 
-cout<<"No";
+cout<<"Subset formation impossble";
 }
 }
