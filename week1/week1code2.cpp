@@ -35,7 +35,7 @@ while(low<high)
     low=mid+1;
     if(vec[mid]>sear)
     high=mid;
-ite++;1
+ite++;
 }
 if(tru==0)
 cout<<"ELEMENT NOT IN ARRAY \n";
