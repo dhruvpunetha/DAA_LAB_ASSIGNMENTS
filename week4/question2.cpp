@@ -1,6 +1,7 @@
 #include<iostream>
 using namespace std;
 //quicksort
+//dhruv punetha ml 23 2014639
 int comp=0,inversion=0;
 void swap(int* a, int* b)
 {

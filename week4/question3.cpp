@@ -1,5 +1,6 @@
 #include<iostream>
 using namespace std;
+//dhruv punetha ml 23 2014639
 int comp=0;
 int ksmall(int arr[],int l,int h,int k)
 {

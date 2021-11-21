@@ -1,4 +1,5 @@
 //kruskal algo
+//dhruv punetha ml 23 2014639
 #include<bits/stdc++.h>
 using namespace std;
 int fp(vector<int>p,int i)

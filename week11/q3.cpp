@@ -1,6 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
-
+//dhruv punetha ml 23 2014639
 bool parta(vector<int>vec,int su,int n)
 {
     if(su==0&&n==vec.size())

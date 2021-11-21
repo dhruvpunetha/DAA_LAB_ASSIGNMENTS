@@ -1,6 +1,7 @@
 //median and majority
 #include<bits/stdc++.h>
 using namespace std;
+//dhruv punetha ml 23 2014639
 int main()
 {
 int n,a;
